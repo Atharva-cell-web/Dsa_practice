@@ -17,8 +17,7 @@ class Solution {
 
         if(diff==minDiff){
             List<Integer> pair=new ArrayList<>();
-            pair.add(arr[i]);
-            pair.add(arr[i+1]);
+            pair.addAll(List.of(arr[i],arr[i+1]));
             lst.add(pair);
         }
        } 
