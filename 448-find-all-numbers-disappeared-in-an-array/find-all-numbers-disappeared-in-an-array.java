@@ -2,11 +2,7 @@ class Solution {
     public List<Integer> findDisappearedNumbers(int[] nums) {
         List<Integer> lst=new ArrayList<>();
         for(int i=0;i<nums.length;i++){
-            int num=nums[i];
-            
-            if(num<0){
-                num=-num;
-            }
+            int num = Math.abs(nums[i]);
             if(nums[num-1]>0){
                 nums[num-1]=-nums[num-1];
             }
