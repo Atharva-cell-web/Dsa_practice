@@ -3,9 +3,7 @@ class Solution {
         int thirdp=nums1.length-1;
         m=m-1;
         n=n-1;
-        if(nums1.length==1 && nums1[0]==0){
-            nums1[0]=nums2[0];
-        }
+       
         while(m>=0 && n>=0){
             if(nums2[n]>nums1[m]){
                 nums1[thirdp]=nums2[n];
